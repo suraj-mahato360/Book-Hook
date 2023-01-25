@@ -1,0 +1,16 @@
+.nav-container{
+    background-color: rgba(126, 120, 120, 0.44);
+    display: flex;
+    align-items: center;
+  }
+  .navbar ul{
+    list-style-type: none;
+    
+  }
+  .navbar {
+    
+    padding: 15px;
+  }
+  .Brand span{
+    color: #FFB703;
+  }

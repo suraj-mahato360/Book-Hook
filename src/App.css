@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --main-color: #FFB703;
+  --light-component-color: #FC9D01;
+  --button-color: #FB8500;
+  --text-color: #000000;
+  --header-color: rgb(255, 255, 255);
+  --heading-size: 2rem;
+  --Subheading-size: 1.4rem;
+  --text-size: 1rem;
+}
+body{
+  background-color: rgb(244, 244, 244);
+}
+
+/* Navbar */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 35px;
+  background-color: var(--header-color);
+  text-align: center;
+}
+
+.menuIcon ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  text-decoration: none;
+}
+.menuIcon ul li{
+  padding: 15px;
+  font-size: var(--Subheading-size);
+}
+.menuIcon ul li button{
+  padding: 8px;
+  background: var(--button-color);
+  color: #ffffff;
+  border-radius: 10%;
+  border: none;
+  font-size: var(--text-size);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.Brand h1{
+  color: black;
+  font-size: 2rem;
+  padding: 15px 0;
+}
+.Brand span{
+  color: var(--main-color);
+}
+
+
+.info{
+  display: grid;
+  padding: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 500px;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-block;
+  height: 50vh;
+  width: 100%;
+}
