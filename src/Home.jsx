@@ -1,22 +1,26 @@
 import React from 'react'
-import Navbar from './components/Navbar'
 import ImgSlider from './components/imgSlider'
+import BuyCard from './components/buyCard'
+import './App.css'
 
 const Home = () => {
   return (
     <div>
-        <div>
-        <Navbar />
+        <div className='first-100hv'>
+        
         <div className="info">
-            <div className="left">
-                <ImgSlider />
-            </div>
-            <div className="right">
-                <h1>BUY.SELL.DONATE</h1>
-                <p>We provide you a way to gain something which can't be taken from you</p>
-            </div>
+                <ImgSlider /> 
         </div>
     </div>
+    <div className="second-100hv">
+      <div className="heading">
+        <h1>Books to Buy</h1>
+      </div>
+      <div className="buysection">
+
+        <BuyCard />
+      </div>
+      </div>
     </div>
   )
 }

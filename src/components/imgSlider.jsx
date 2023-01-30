@@ -26,13 +26,21 @@ const ImgSlider = () => {
 
 
   return (
-    <div className="slideshow">
-      <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
-        {slides.map((backImg, index) => (
-          <img className="slide" src={ backImg } alt="" key={index} />
-        ))}
+    <>
+      <div className="left">
+        <div className="slideshow">
+          <div className="slideshowSlider" style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}>
+            {slides.map((backImg, index) => (
+              <img className="slide" src={ backImg } alt="" key={index} />
+            ))}
+          </div>
+        </div>
       </div>
+      <div className="right">
+          <h1>A Platform For Readers to <br /> BUY || SELL || DONATE <br /> Books</h1>
+          <p>We provide you a way to gain something which can't be taken from you</p>
       </div>
+    </>
   )
 }
 
